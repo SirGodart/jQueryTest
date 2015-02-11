@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Learning Javascript</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link href='http://fonts.googleapis.com/css?family=Quantico:400' rel='stylesheet' type='text/css'>
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+
+<style type="text/css">
+	
+
+
+.square {
+
+width: 100px;
+height: 100px;
+background-color: #ce260b;
+margin-top: 20px;
+
+}
+
+#circle {
+
+position: relative;
+width: 200px;
+height: 200px;
+background-color: #08c5b8;
+border-radius: 100px;
+}
+
+
+
+
+</style>
+
+
+
+ </head>
+
+<body>
+
+
+<div id="circle"></div>
+
+
+
+<script>
+
+
+$("#circle").click(function() {
+
+
+
+
+
+$(this).animate({
+
+		
+		width: "50px",
+		height: "50px",
+		left: "+=300"
+
+		}, 500, function() {
+
+
+		$(this).animate({
+
+			left: "-=300",
+			width: "200px",
+			height: "200px"
+					});	
+		});
+});
+
+
+
+
+
+
+/*
+//use attr to refer to a src
+//ajax loads otherfiles without refreshing the page
+//use this to refer to specific element 
+//alert($(this).css("width", "400px"));
+
+//number in miliseconds
+//second parameter contains callback function // this code will be executed when fade is fisished
+$("#text").fadeOu("slow", function() {
+
+
+
+	});
+
+
+});
+
+
+$("#btn2").click(function(){
+
+$("#text").fadeIn();
+
+*/
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+  </body>
+</html>
